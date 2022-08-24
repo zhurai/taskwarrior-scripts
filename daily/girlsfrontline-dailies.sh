@@ -41,7 +41,7 @@ function create_date () {
 #  scheduled:  	0:00
 #  due: 		23:59
 #  until:		tomorrow 4:00
-thetitle=": Factory.Doll: Claim"
+thetitle=": Factory.TDoll: Claim"
 startdate=""
 scheduleddate="0:00"
 duedate="23:59"
@@ -53,7 +53,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 #  scheduled:  	0:00
 #  due: 		23:59
 #  until:		tomorrow 4:00
-thetitle=": Factory.Doll: Construct (x4)"
+thetitle=": Factory.TDoll: Construct (x4)"
 startdate=""
 scheduleddate="0:00"
 duedate="23:59"
@@ -89,7 +89,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 #  scheduled:  	0:00
 #  due: 		23:59
 #  until:		tomorrow 4:00
-thetitle=": "
+thetitle=": Factory.Enhance and Retire TDoll"
 startdate=""
 scheduleddate="0:00"
 duedate="23:59"
