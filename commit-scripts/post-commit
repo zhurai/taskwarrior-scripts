@@ -1,0 +1,7 @@
+#!/bin/sh
+destdir="/d/PersonalSync/Applications/TaskWarrior/scripts"
+
+scriptpath=$(realpath "$0")
+currentdir=$(dirname "${scriptpath}")
+srcdir=$(realpath "${currentdir}/..")
+robocopy.exe $srcdir $destdir /MIR /R:x //W:x //XD .git //XF .gitattributes
