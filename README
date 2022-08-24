@@ -1,0 +1,35 @@
+add to windows / wsl on PC2
+	sudoer:
+		%sudo ALL=NOPASSWD: /etc/init.d/cron start
+	add to startup:
+		C:\Windows\System32\wsl.exe sudo /etc/init.d/cron start
+
+DO THIS THESE ON ONE COMPUTER THAT IS SYNCING WITH EVERYTHING ELSE
+
+
+
+add to crontab (this is based on )
+
+
+
+# daily
+~/.task/scripts/daily/arknights-schedule.sh 		# sleep + 2:
+~/.task/scripts/daily/arknights-dailies.sh 			# sleep + 2:
+~/.task/scripts/daily/counterside-dailies.sh		# sleep + 2:
+~/.task/scripts/daily/girlsfrontline-dailies.sh		# sleep + 2:
+
+
+
+# weekly
+~/.task/scripts/weekly/ 							# sleep + 3:00
+~/.task/scripts/weekly/ 							# sleep + 3:05
+~/.task/scripts/weekly/ 							# sleep + 3:10
+~/.task/scripts/weekly/ 							# sleep + 3:15
+# monthly
+~/.task/scripts/monthly/ 							# sleep + 4:00
+# yearly
+~/.task/scripts/yearly/ 							# sleep + 5:00
+
+
+
+30 2 * * Sun ~/.task/scripts/weekly/recurr-arknights-annihilation.sh 
