@@ -60,36 +60,12 @@ duedate="23:59"
 untildate="tomorrow 4:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
 
-# Infrastructure: Rotate Dorms 2
+# Start Mastery Upgrade
 #  start:      *
 #  scheduled:  	4:00
 #  due: 	   *23:59
 #  until:		tomorrow 4:00
-thetitle=": Infra: Rotate Dorms 2"
-startdate=""
-scheduleddate="4:00"
-duedate="23:59"
-untildate="tomorrow 4:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-
-# Use Stamina 1
-#  start:      *
-#  scheduled:  	4:00
-#  due: 	   *23:59
-#  until:		tomorrow 4:00
-thetitle=": Use Stamina 1"
-startdate=""
-scheduleddate="4:00"
-duedate="23:59"
-untildate="tomorrow 4:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-
-# Use Stamina 2
-#  start:      *
-#  scheduled:  	4:00
-#  due: 	   *23:59
-#  until:		tomorrow 4:00
-thetitle=": Use Stamina 2"
+thetitle=": Upgrade Skill Mastery"
 startdate=""
 scheduleddate="4:00"
 duedate="23:59"
@@ -132,24 +108,50 @@ duedate="23:59"
 untildate="tomorrow 4:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
 
-# Start Mastery Upgrade
-#  start:      *
-#  scheduled:  	4:00
-#  due: 	   *23:59
-#  until:		tomorrow 4:00
-thetitle=": Upgrade Skill Mastery"
-startdate=""
-scheduleddate="4:00"
-duedate="23:59"
-untildate="tomorrow 4:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-
 # Claim Rewards
 #  start:      *
 #  scheduled:  	4:00
 #  due: 	   *23:59
 #  until:		tomorrow 4:00
 thetitle=": Claim Rewards"
+startdate=""
+scheduleddate="4:00"
+duedate="23:59"
+untildate="tomorrow 4:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Use Stamina 1
+#  start:      *
+#  scheduled:  	4:00
+#  due: 	   *23:59
+#  until:		tomorrow 4:00
+thetitle=": Use Stamina 1"
+startdate=""
+scheduleddate="4:00"
+duedate="23:59"
+untildate="tomorrow 4:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+#################################################################
+
+# Infrastructure: Rotate Dorms 2
+#  start:      *
+#  scheduled:  	4:00
+#  due: 	   *23:59
+#  until:		tomorrow 4:00
+thetitle=": Infra: Rotate Dorms 2"
+startdate=""
+scheduleddate="4:00"
+duedate="23:59"
+untildate="tomorrow 4:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Use Stamina 2
+#  start:      *
+#  scheduled:  	4:00
+#  due: 	   *23:59
+#  until:		tomorrow 4:00
+thetitle=": Use Stamina 2"
 startdate=""
 scheduleddate="4:00"
 duedate="23:59"
