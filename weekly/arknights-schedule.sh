@@ -29,7 +29,7 @@ function create_date () {
 
 #################################################################
 
-#  Weekly Reset
+# Weekly Reset
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00
 thetitle=": Reset: Weekly"
@@ -37,7 +37,7 @@ scheduleddate="monday 4:00"
 untildate="next monday 4:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 
-#  Annihilation Reset
+# Annihilation Reset
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00
 thetitle=": Reset: Weekly Annihilation"
@@ -48,7 +48,7 @@ create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 #################################################################
 
 # Arknights Standard Banner
-#   Every 2 weeks
+#  Every 2 weeks
 #  scheduled:  	friday 4:00
 #  until: 		friday 4:00 (2 weeks from now)
 thetitle=": Standard Banner Rotation"
@@ -82,7 +82,7 @@ else
 fi
 
 # Arknights Yellow Cert Exchange (Tokens)
-#   Every 2 weeks
+#  Every 2 weeks
 #  scheduled:  	friday 4:00
 #  until: 		friday 4:00 (2 weeks from now)
 thetitle=": Yellow Cert Rotation (Tokens)"

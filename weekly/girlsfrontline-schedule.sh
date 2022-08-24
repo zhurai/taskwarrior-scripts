@@ -29,7 +29,7 @@ function create_date () {
 
 #################################################################
 
-#  Weekly Reset
+# Weekly Reset
 #  scheduled:  	4:00
 #  until:		tomorrow 4:00
 thetitle=": Reset: Weekly"
