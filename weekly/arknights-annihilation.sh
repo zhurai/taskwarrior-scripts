@@ -14,7 +14,8 @@ project="Games.Arknights"
 tags="+games +arknights +weeklies"
 basetitle="Arknights: Weekly Annihilation"
 priority=2
-TZ=UTC+7 # UTC-7
+offset=+7 # +7 = UTC-7
+export TZ=UTC$offset
 loop=5
 
 # Other Variables
