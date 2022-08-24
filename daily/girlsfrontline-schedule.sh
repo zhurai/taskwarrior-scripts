@@ -4,8 +4,8 @@
 project="Games.GirlsFrontline"
 tags="+games +girlsfrontline +schedule"
 basetitle="GirlsFrontline"
-offset=-8 # +8 = UTC-8
 priority=-1
+offset=-8 # +8 = UTC-8
 
 # Other Variables
 rcdateformat="Y-M-DTH:N:S"
