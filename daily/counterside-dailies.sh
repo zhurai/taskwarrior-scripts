@@ -4,8 +4,8 @@
 project="Games.CounterSide"
 tags="+games +counterside +dailies"
 basetitle="CounterSide: Daily"
-offset=-7 # +7 = UTC-7
 priority=3
+offset=-7 # +7 = UTC-7
 
 # need=1: dailies period is not within that period (need to use a 2nd timing within that period to do a very quick claim+sweep)
 # need=*: dailies period is 4pm-12am GMT+8 (do not need to do anything)
