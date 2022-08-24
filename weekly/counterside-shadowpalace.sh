@@ -14,7 +14,8 @@ project="Games.CounterSide"
 tags="+games +counterside +weeklies"
 basetitle="CounterSide: Weekly Shadow Palace"
 priority=2
-TZ=UTC+7 # UTC-7
+offset=-7 # +7 = UTC-7
+export TZ=UTC$offset
 loop=7
 
 # Other Variables
@@ -87,4 +88,3 @@ do
 	fi
 done
 task $lastid modify $depends
-
