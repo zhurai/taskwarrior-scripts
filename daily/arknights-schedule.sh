@@ -4,8 +4,8 @@
 project="Games.Arknights"
 tags="+games +arknights +schedule"
 basetitle="Arknights"
-offset=+7 # +7 = UTC-7
 priority=-1
+offset=+7 # +7 = UTC-7
 
 # Other Variables
 rcdateformat="Y-M-DTH:N:S"
