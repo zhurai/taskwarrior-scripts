@@ -1,0 +1,8 @@
+#!/bin/sh
+# This is a version controlled copy of the .git/hooks/post-commit file
+# Just calls the commit-scripts/post-commit that is under version control
+# I have had several issues on windows without WSL (MSYS2/Cygwin/etc) with symbolic links or I would have used that option instead
+scriptpath=$(realpath "$0")
+currentdir=$(dirname "${scriptpath}")
+srcdir=$(realpath "${currentdir}/../..")
+${srcdir}/commit-scripts/post-commit
