@@ -4,8 +4,8 @@
 project="Games.Arknights"
 tags="+games +arknights +schedule"
 basetitle="Arknights"
-offset=+7 # +7 = UTC-7
 priority=-1
+offset=+7 # +7 = UTC-7
 
 # Other Variables
 rcdateformat="Y-M-DTH:N:S"
@@ -30,16 +30,16 @@ function create_date () {
 #################################################################
 
 #  Weekly Reset
-#  scheduled:  	
-#  until:		
+#  scheduled:  	monday 4:00
+#  until:		next monday 4:00
 thetitle=": Reset: Weekly"
 scheduleddate="monday 4:00"
 untildate="next monday 4:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 
 #  Annihilation Reset
-#  scheduled:  	
-#  until:		
+#  scheduled:  	monday 4:00
+#  until:		next monday 4:00
 thetitle=": Reset: Weekly Annihilation"
 scheduleddate="4:00"
 untildate="tomorrow 4:00"
@@ -113,4 +113,3 @@ else
             :
         fi
 fi
-
