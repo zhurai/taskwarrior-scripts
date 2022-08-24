@@ -4,8 +4,8 @@
 project="Games.CounterSide"
 tags="+games +counterside +schedule"
 basetitle="CounterSide"
-offset=-7 # +7 = UTC-7
 priority=-1
+offset=-7 # +7 = UTC-7
 
 # Other Variables
 rcdateformat="Y-M-DTH:N:S"
