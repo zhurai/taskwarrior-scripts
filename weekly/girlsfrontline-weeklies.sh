@@ -36,6 +36,18 @@ function create_date () {
 
 #################################################################
 
+# Weekly Claim Rewards
+#  start:      *
+#  scheduled:  	friday 0:00
+#  due: 	   *sunday 23:59
+#  until:		next monday 0:00
+thetitle=": Claim Weekly Rewards"
+startdate=""
+scheduleddate="friday 0:00"
+duedate="sunday 23:59"
+untildate="next monday 0:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
 # Factory: T-Doll: Construct Heavy x1 
 #  start:      *
 #  scheduled:  	monday 0:00
