@@ -52,7 +52,7 @@ task $lastid annotate "Reset: Store: Exchange: ShadowPalace: Ultraprecise T6 Spe
 task $lastid annotate "Reset: Store: Exchange: ShadowPalace: 75% Off T6 Spectral Universal Mold (15qty, 15shards) [High Priority]"
 task $lastid annotate "Reset: Store: Exchange: ShadowPalace: 50% Off T6 Spectral Universal Mold (15qty, 30shards) [High Priority]"
 task $lastid annotate "Reset: Store: Exchange: ShadowPalace: Tuning Binary (30qty, 5shards) [High Priority]"
-task $lastid annotate "Reset: Store: Exchange: Consortium: Set Binary (3qty,800tokens) [High Priority]"
+task $lastid annotate "Reset: Store: Exchange: Consortium: Set Binary (5qty,800tokens) [High Priority]"
 task $lastid annotate "Reset: Store: Exchange: Consortium: Fusion Core (1qty,2000tokens) [Medium Priority]"
 task $lastid annotate "Reset: Store: Exchange: Consortium: S-APT Core Coupon (3qty,1000tokens) [Low Priority]"
 task $lastid annotate "Reset: Store: Exchange: BusinessCard: 10 APT Cores Coupon (3qty,10cards) [High Priority]"
