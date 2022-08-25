@@ -85,10 +85,10 @@ fi
 #  Every 2 weeks
 #  scheduled:  	friday 4:00
 #  until: 		friday 4:00 (2 weeks from now)
-thetitle=": Yellow Cert Rotation (Tokens)"
+thetitle=": YellowCert Rotation (Tokens)"
 newtitle_="\"${basetitle}${6}\"" 
 # get id of previous Banner
-stdbannerID=$(task /Arknights/ /Yellow/ ids)
+stdbannerID=$(task /Arknights/ /YellowCert/ /Rotation/ ids)
 if [ -z "${stdbannerID}" ];
 then
         # Not Found
