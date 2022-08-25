@@ -30,19 +30,19 @@ function create_date () {
 #################################################################
 
 # Weekly Reset
-#  scheduled:  	4:00
-#  until:		tomorrow 4:00
+#  scheduled:  	monday 4:00
+#  until:		next monday 4:00
 thetitle=": Reset: Weekly"
-scheduleddate="4:00"
-untildate="tomorrow 4:00"
+scheduleddate="monday 4:00"
+untildate="next monday 4:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 
 # Weekly Shop Reset
-#  scheduled:  	4:00
-#  until:		tomorrow 4:00
+#  scheduled:  	monday 0:00
+#  until:		next monday 0:00
 thetitle=": Reset: Weekly Shop"
-scheduleddate="4:00"
-untildate="tomorrow 4:00"
+scheduleddate="monday 0:00"
+untildate="next monday 0:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 lastid=$(task +LATEST ids)
 task $lastid annotate "Reset: Store: Exchange: Convenience: Gear Precision Package (3qty, 790quartz) [Low Priority]"

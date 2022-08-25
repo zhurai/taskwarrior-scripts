@@ -41,8 +41,8 @@ create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00
 thetitle=": Reset: Weekly Annihilation"
-scheduleddate="4:00"
-untildate="tomorrow 4:00"
+scheduleddate="monday 4:00"
+untildate="next monday 4:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 
 #################################################################

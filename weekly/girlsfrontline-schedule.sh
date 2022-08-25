@@ -30,9 +30,9 @@ function create_date () {
 #################################################################
 
 # Weekly Reset
-#  scheduled:  	4:00
-#  until:		tomorrow 4:00
+#  scheduled:  	monday 0:00
+#  until:		next monday 0:00
 thetitle=": Reset: Weekly"
-scheduleddate="0:00"
-untildate="tomorrow 0:00"
+scheduleddate="monday 0:00"
+untildate="next monday 0:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
