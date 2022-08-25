@@ -59,3 +59,39 @@ scheduleddate="monday 0:00"
 duedate="sunday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Combat: Simulation: Coalition: Defense Training Set up
+#  start:      *
+#  scheduled:  	monday 0:00
+#  due: 		sunday 23:59
+#  until:		next monday 0:00
+thetitle=": Combat.Sim: Coalition Defense Training"
+startdate=""
+scheduleddate="monday 0:00"
+duedate="sunday 23:59"
+untildate="next monday 0:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Combat: Simulation: Coalition: Adjustment Training Set up
+#  start:      *
+#  scheduled:  	monday 0:00
+#  due: 		sunday 23:59
+#  until:		next monday 0:00
+thetitle=": Combat.Sim: Coalition Adjustment Training"
+startdate=""
+scheduleddate="monday 0:00"
+duedate="sunday 23:59"
+untildate="next monday 0:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Combat: Simulation: Coalition: Decoding Training Set up
+#  start:      *
+#  scheduled:  	monday 0:00
+#  due: 		sunday 23:59
+#  until:		next monday 0:00
+thetitle=": Combat.Sim: Coalition Decoding Training"
+startdate=""
+scheduleddate="monday 0:00"
+duedate="sunday 23:59"
+untildate="next monday 0:00"
+create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
