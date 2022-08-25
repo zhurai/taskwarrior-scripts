@@ -12,7 +12,7 @@ untildate="next monday 4:00"
 # Event information
 project="Games.Arknights"
 tags="+games +arknights +weeklies"
-basetitle="Arknights: "
+basetitle="Arknights: Weeklies"
 priority=2
 offset=+7 # +7 = UTC-7
 
