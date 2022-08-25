@@ -70,6 +70,7 @@ startdate=""
 scheduleddate="monday 0:00"
 duedate="sunday 23:59"
 untildate="next monday 0:00"
+priority=3
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
 
 # Combat: Simulation: Coalition: Adjustment Training Set up
@@ -82,6 +83,7 @@ startdate=""
 scheduleddate="monday 0:00"
 duedate="sunday 23:59"
 untildate="next monday 0:00"
+priority=3
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
 
 # Combat: Simulation: Coalition: Decoding Training Set up
@@ -94,4 +96,8 @@ startdate=""
 scheduleddate="monday 0:00"
 duedate="sunday 23:59"
 untildate="next monday 0:00"
+priority=3
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
+
+# Revert priority back
+priority=2
