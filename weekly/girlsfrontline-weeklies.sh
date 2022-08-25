@@ -39,7 +39,7 @@ function create_date () {
 # Factory: T-Doll: Construct Heavy x1 
 #  start:      *
 #  scheduled:  	monday 0:00
-#  due: 		sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 0:00
 thetitle=": Factory.TDoll: Heavy Construct (x1)"
 startdate=""
@@ -51,7 +51,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 # Factory: Equipment: Construct Heavy 
 #  start:      *
 #  scheduled:  	monday 0:00
-#  due: 		sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 0:00
 thetitle=": Factory.Equip: Heavy Construct"
 startdate=""
@@ -63,7 +63,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 # Combat: Simulation: Coalition: Defense Training Set up
 #  start:      *
 #  scheduled:  	monday 0:00
-#  due: 		sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 0:00
 thetitle=": Combat.Sim: Coalition Defense Training"
 startdate=""
@@ -76,7 +76,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 # Combat: Simulation: Coalition: Adjustment Training Set up
 #  start:      *
 #  scheduled:  	monday 0:00
-#  due: 		sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 0:00
 thetitle=": Combat.Sim: Coalition Adjustment Training"
 startdate=""
@@ -89,7 +89,7 @@ create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" 
 # Combat: Simulation: Coalition: Decoding Training Set up
 #  start:      *
 #  scheduled:  	monday 0:00
-#  due: 		sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 0:00
 thetitle=": Combat.Sim: Coalition Decoding Training"
 startdate=""
