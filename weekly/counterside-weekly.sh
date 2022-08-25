@@ -47,4 +47,3 @@ scheduleddate="friday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-
