@@ -37,6 +37,14 @@ scheduleddate="4:00"
 untildate="tomorrow 4:00"
 create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
 
+#  Evening Login Reward
+#  scheduled:  	16:00
+#  until:		tomorrow 0:00
+thetitle=": Evening Login Reward Period"
+scheduleddate="16:00"
+untildate="tomorrow 0:00"
+create_date "$dateformat" "$scheduleddate" "$untildate" "$thetitle"
+
 #  Daily Shop Reset
 #  scheduled:  	0:00
 #  until:		tomorrow 4:00
