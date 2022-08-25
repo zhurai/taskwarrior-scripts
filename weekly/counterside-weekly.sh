@@ -59,7 +59,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 5"
 task $lastid annotate "Cost: 30"
 task $lastid annotate "Priority: High"
@@ -75,7 +75,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 3"
 task $lastid annotate "Cost: 10"
 task $lastid annotate "Priority: High"
@@ -91,7 +91,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 10"
 task $lastid annotate "Cost: 10"
 task $lastid annotate "Priority: High"
@@ -107,7 +107,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 5"
 task $lastid annotate "Cost: 800"
 task $lastid annotate "Priority: High"
@@ -123,7 +123,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 1"
 task $lastid annotate "Cost: 2000"
 task $lastid annotate "Priority: High"
@@ -139,7 +139,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 3"
 task $lastid annotate "Cost: 1000"
 task $lastid annotate "Priority: Low"
@@ -155,7 +155,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 5"
 task $lastid annotate "Cost: 30"
 task $lastid annotate "Priority: High"
@@ -171,7 +171,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 15"
 task $lastid annotate "Cost: 30"
 task $lastid annotate "Priority: Medium"
@@ -187,7 +187,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 15"
 task $lastid annotate "Cost: 15"
 task $lastid annotate "Priority: High"
@@ -203,7 +203,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 1"
 task $lastid annotate "Cost: 120"
 task $lastid annotate "Priority: High"
@@ -219,7 +219,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 2"
 task $lastid annotate "Cost: 260 Quartz"
 task $lastid annotate "Priority: Medium"
@@ -235,7 +235,7 @@ scheduleddate="monday 0:00"
 duedate="saturday 23:59"
 untildate="next monday 0:00"
 create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-previd=$(task +LATEST ids)
+lastid=$(task +LATEST ids)
 task $lastid annotate "Quantity: 3"
 task $lastid annotate "Cost: 790 Quartz"
 task $lastid annotate "Priority: Low"
