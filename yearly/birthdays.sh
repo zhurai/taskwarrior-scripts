@@ -53,7 +53,7 @@ function create_date () {
 while read name date relationship notes
 do
 	create_date "$dateformat" "$name" "$date" "$relationship" "$note" 
-done < $INPUT
+done < $inputfile
 IFS=$OLDIFS
 
 
