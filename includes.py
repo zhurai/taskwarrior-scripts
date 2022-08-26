@@ -52,6 +52,11 @@ def task_get(task_search):
     task_ids=result.stdout.decode('utf-8').rstrip()
     return task_ids
 
+def task_getDOM(task_id,infotoget):
+    result=subprocess.run(['task','_get',task_id+"."+infotoget], stdout=subprocess.PIPE)
+    response=result.stdout.decode('utf-8').rstrip()
+    return response
+
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
    pass
