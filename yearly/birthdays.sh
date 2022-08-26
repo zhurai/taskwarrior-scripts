@@ -20,9 +20,8 @@ function create_date () {
     # $5 = $note
     
     OIFS=$IFS
-    IFS='m'
+    IFS=','
     newtitle_="\"${basetitle}${2} ($3)\"" 
-    relarray=$(echo $5 | tr ",")
     
     #redo
     # should be current timezone
@@ -35,6 +34,7 @@ function create_date () {
     lastid=$(task +LATEST ids)
     
     # annotate relationship data
+    $relarray=(${4//,/ })
     for rel in $relarray
     do
         task $lastid annotate "Relationship ${rel}"
