@@ -1,5 +1,7 @@
 #!/bin/python3
-import subprocess
+import sys
+sys.path.insert(0, '..')
+import includes
 import csv
 import os
 
@@ -16,41 +18,27 @@ rc_dateformat="Y-M-DTH:N:S"
 date_format="+%Y-%m-%dT%H:%M:%S"
 file_path = os.path.realpath(__file__)
 
-def create_date (date_format,name,birthday,relationship,note):
-    # $1 = $dateformat
-    # $2 = $name
-    # $3 = $birthday
-    # $4 = $relationship
-    # $5 = $note
-    newtitle="\""+base_title+name+" ("+birthday+")\"" 
-    
-    # should be current timezone
-    result=subprocess.run(['date','-d',birthday,date_format], stdout=subprocess.PIPE)
-    birthday=result.stdout.decode('utf-8').rstrip()
-    
-    result=subprocess.run(['date','-d',birthday+"-7 days",date_format], stdout=subprocess.PIPE)
-    scheduled=result.stdout.decode('utf-8').rstrip()
+def create_date (name,birthday,relationship,note):
+    new_title="\""+base_title+name+" ("+birthday+")\"" 
 
-    result=subprocess.run(['date','-d',birthday+"+7 days",date_format], stdout=subprocess.PIPE)
-    until=result.stdout.decode('utf-8').rstrip()
+    # dates should be current timezone
+    birthday_=includes.date_create(date_format,birthday)
+    scheduled_=includes.date_create(date_format,birthday,"-7 days")
+    until_=includes.date_create(date_format,birthday,"+7 days")
     
-    # execute command
-    subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+scheduled+'"','until:"'+until+'"','due:"'+birthday+'"','rc.dateformat:"'+rcdateformat+'"','priority:"'+str(priority)+'"'])
-    result=subprocess.run(['task','+LATEST','ids'], stdout=subprocess.PIPE)
-    lastid=result.stdout.decode('utf-8').rstrip()
-    
-    # annotate relationship data
-    relarray=relationship.split(",")
-    
-    for rel in relarray:
-        subprocess.run(['task',lastid,'annotate','Relationship: '+rel])
-    
-    # annotate note
-    subprocess.run(['task',lastid,'annotate','Note: '+note])
+    # split relationship items   
+    relationship_=relationship.split(",")
+    annotation=[]
+    for item in relationship_:
+        annotation.append("Relationship: "+item)
+    annotation.append("Note: "+note)
+        
+    # run task command
+    includes.task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,birthday_,None,annotation,None)
         
 #################################################################
 
-with open(inputfile) as thecsv:
+with open(input_file) as thecsv:
     thereader=csv.reader(thecsv,delimiter=seperator)
     for row in thereader:
-        create_date(dateformat,row[0],row[1],row[2],row[3])
+        create_date(row[0],row[1],row[2],row[3])
