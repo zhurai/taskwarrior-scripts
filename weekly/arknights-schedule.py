@@ -4,47 +4,47 @@ import subprocess
 # Event information
 project="Games.Arknights"
 tags=["+games","+arknights","+schedule"]
-basetitle="Arknights"
+base_title="Arknights"
 priority=-1
 offset=+7 # +7 = UTC-7
 
 # Other Variables
-rcdateformat="Y-M-DTH:N:S"
-dateformat="+%Y-%m-%dT%H:%M:%S"
+rc_dateformat="Y-M-DTH:N:S"
+date_format="+%Y-%m-%dT%H:%M:%S"
 
-def create_date (dateformat,scheduleddate,untildate,thetitle):
+def create_date (date_format,scheduled,until,the_title):
     # 1 = $dateformat
     # 2 = $scheduleddate
     # 3 = $untildate
     # 4 = $thetitle
     
     # all the other dates should be the source timezone
-    result=subprocess.run(['date','-d',scheduleddate, dateformat], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
-    scheduleddate=result.stdout.decode('utf-8').rstrip()
-    result=subprocess.run(['date','-d',untildate, dateformat], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
-    untildate=result.stdout.decode('utf-8').rstrip()
-    newtitle="\""+basetitle+thetitle+"\"" 
+    result=subprocess.run(['date','-d',scheduled, date_format], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
+    scheduled_=result.stdout.decode('utf-8').rstrip()
+    result=subprocess.run(['date','-d',until, date_format], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
+    until_=result.stdout.decode('utf-8').rstrip()
+    new_title="\""+base_title+the_title+"\"" 
     
     # execute command
-    subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+scheduleddate+'"','until:"'+untildate+'"','rc.dateformat:"'+rcdateformat+'"','priority:'+str(priority)])
+    subprocess.run(['task','add','project:"'+project+'"',*tags,new_title,'scheduled:"'+scheduled_+'"','until:"'+until_+'"','rc.dateformat:"'+rc_dateformat+'"','priority:'+str(priority)])
 
 #################################################################
 
 # Weekly Reset
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00
-thetitle=": Reset: Weekly"
-scheduleddate="monday 4:00"
-untildate="next monday 4:00"
-create_date(dateformat,scheduleddate,untildate,thetitle)
+the_title=": Reset: Weekly"
+schedule="monday 4:00"
+until="next monday 4:00"
+create_date(dateformat,schedule,until,the_title)
 
 # Annihilation Reset
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00
-thetitle=": Reset: Weekly Annihilation"
-scheduleddate="monday 4:00"
-untildate="next monday 4:00"
-create_date(dateformat,scheduleddate,untildate,thetitle)
+the_title=": Reset: Weekly Annihilation"
+schedule="monday 4:00"
+until="next monday 4:00"
+create_date(dateformat,schedule,until,the_title)
 
 #################################################################
 
@@ -52,26 +52,25 @@ create_date(dateformat,scheduleddate,untildate,thetitle)
 #  Every 2 weeks
 #  scheduled:   friday 4:00
 #  until:       friday 4:00 (2 weeks from now)
-thetitle=": Standard Banner Rotation"
-newtitle="\""+basetitle+thetitle+"\"" 
+the_title=": Standard Banner Rotation"
+new_title="\""+basetitle+the_title+"\"" 
 # get id of previous Banner
 result=subprocess.run(['task','/Arknights/','/Standard/','ids'], stdout=subprocess.PIPE)
-stdbannerID=result.stdout.decode('utf-8').rstrip()
-if stdbannerID:
+banner_id=result.stdout.decode('utf-8').rstrip()
+if banner_id:
     # split into multiple
-    bannerArray=stdbannerID.split("-")
-    if len(bannerArray) == 1:
+    banner_array=banner_id.split("-")
+    if len(banner_array) == 1:
         # only 1 exists
-        theID=bannerArray[0]
+        theID=banner_array[0]
         # check id due date
         result=subprocess.run(['task','_get',theID+'.due'], stdout=subprocess.PIPE)
         thedue=result.stdout.decode('utf-8').rstrip()
         # collect information
-        newStart=thedue
+        new_start=thedue
         result=subprocess.run(['date','-d',thedue.split("T")[0]+'+ 14 days',dateformat], stdout=subprocess.PIPE)
-        newEnd=result.stdout.decode('utf-8').rstrip()
-        print(newEnd)
-        subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+newStart+'"','until:"'+newEnd+'"','rc.dateformat:"'+rcdateformat+'"','priority:"'+str(priority)+'"'])
+        new_end=result.stdout.decode('utf-8').rstrip()
+        subprocess.run(['task','add','project:"'+project+'"',*tags,new_title,'scheduled:"'+new_start+'"','until:"'+new_end+'"','rc.dateformat:"'+rc_dateformat+'"','priority:"'+str(priority)+'"'])
     else:
         # more than one
         # do not do anything
@@ -81,26 +80,25 @@ if stdbannerID:
 #  Every 2 weeks
 #  scheduled:   friday 4:00
 #  until:       friday 4:00 (2 weeks from now)
-thetitle=": YellowCert Rotation (Tokens)"
-newtitle="\""+basetitle+thetitle+"\"" 
+the_title=": YellowCert Rotation (Tokens)"
+new_title="\""+basetitle+the_title+"\"" 
 # get id of previous Banner
 result=subprocess.run(['task','/Arknights/','/Standard/','ids'], stdout=subprocess.PIPE)
 stdbannerID=result.stdout.decode('utf-8').rstrip()
-if stdbannerID:
+if banner_id:
     # split into multiple
-    bannerArray=stdbannerID.split("-")
-    if len(bannerArray) == 1:
+    banner_array=banner_id.split("-")
+    if len(banner_array) == 1:
         # only 1 exists
-        theID=bannerArray[0]
+        theID=banner_array[0]
         # check id due date
         result=subprocess.run(['task','_get',theID+'.due'], stdout=subprocess.PIPE)
         thedue=result.stdout.decode('utf-8').rstrip()
         # collect information
-        newStart=thedue
+        new_start=thedue
         result=subprocess.run(['date','-d',thedue.split("T")[0]+'+ 14 days',dateformat], stdout=subprocess.PIPE)
-        newEnd=result.stdout.decode('utf-8').rstrip()
-        print(newEnd)
-        subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+newStart+'"','until:"'+newEnd+'"','rc.dateformat:"'+rcdateformat+'"','priority:"'+str(priority)+'"'])
+        new_end=result.stdout.decode('utf-8').rstrip()
+        subprocess.run(['task','add','project:"'+project+'"',*tags,new_title,'scheduled:"'+new_start+'"','until:"'+new_end+'"','rc.dateformat:"'+rc_dateformat+'"','priority:"'+str(priority)+'"'])
     else:
         # more than one
         # do not do anything
