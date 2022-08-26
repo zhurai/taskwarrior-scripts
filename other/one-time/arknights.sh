@@ -1052,15 +1052,6 @@ task $lastid annotate "40,000 LMD"
 
 #################################################################
 
-newtitle=": Upgrade: Lee Elite 2"
-newtitle_="\"${basetitle}${newtitle}\"" 
-task add project:$project $tags $newtitle_ priority:$priority
-lastid=$(task +LATEST ids)
-task $lastid annotate "4 T2.2 Specialist Chips"
-task $lastid annotate "4 T5 Polymerization Prep"
-task $lastid annotate "9 T4 Kohl"
-task $lastid annotate "180,000 LMD"
-
 newtitle=": Upgrade: Kjera Elite 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
@@ -1068,15 +1059,6 @@ lastid=$(task +LATEST ids)
 task $lastid annotate "3 T2.2 Caster Chips"
 task $lastid annotate "8 T4 Grindstone"
 task $lastid annotate "13 T3 Alloy"
-task $lastid annotate "120,000 LMD"
-
-newtitle=": Upgrade: Blacknight Elite 2"
-newtitle_="\"${basetitle}${newtitle}\"" 
-task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
-lastid=$(task +LATEST ids)
-task $lastid annotate "3 T2.2 Vanguard Chips"
-task $lastid annotate "8 T4 Alloy"
-task $lastid annotate "13 T3 Kohl"
 task $lastid annotate "120,000 LMD"
 
 newtitle=": Upgrade: Kroos2 Elite 1"
