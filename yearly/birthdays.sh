@@ -8,7 +8,8 @@ priority=3
 
 # Other Variables
 inputfile="birthday.csv"
-IFS=','
+OLDIFS1=$IFS
+IFS='|'
 rcdateformat="Y-M-DTH:N:S"
 dateformat="+%Y-%m-%dT%H:%M:%S"
 
@@ -19,7 +20,7 @@ function create_date () {
     # $4 = $relationship
     # $5 = $note
     
-    OIFS=$IFS
+    OIFS2=$IFS
     IFS=','
     newtitle_="\"${basetitle}${2} ($3)\"" 
     
@@ -44,7 +45,7 @@ function create_date () {
     task $lastid annotate $5
     
     # revert IFS
-    IFS=$OIFS
+    IFS=$OIFS2
 }
 
 #################################################################
@@ -54,6 +55,6 @@ while read name date relationship notes
 do
 	create_date "$dateformat" "$name" "$date" "$relationship" "$note" 
 done < $inputfile
-IFS=$OLDIFS
+IFS=$OLDIFS1
 
 
