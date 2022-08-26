@@ -821,18 +821,27 @@ newtitle_="\"${basetitle}${newtitle}\""
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: High"
+task $lastid annotate "4 Module Blocks"
+task $lastid annotate "2 T5 D32"
+task $lastid annotate "80,000 LMD"
 
 newtitle=": Module: Wild Mane (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Medium"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Rock"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Tachanka (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Medium"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Crystal"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Reed (Mission 2)"
 newtitle_="\"${basetitle}${newtitle}\"" 
@@ -845,6 +854,9 @@ newtitle_="\"${basetitle}${newtitle}\""
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Sugar"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Cutter (Mission 1) (1/5)"
 newtitle_="\"${basetitle}${newtitle}\"" 
@@ -893,6 +905,9 @@ newtitle_="\"${basetitle}${newtitle}\""
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Kohl"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Franka (Mission 2)"
 newtitle_="\"${basetitle}${newtitle}\"" 
@@ -905,90 +920,135 @@ newtitle_="\"${basetitle}${newtitle}\""
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Oriron"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Grani (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Solution"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Mr Nothing (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Kohl"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Conviction (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 RMA"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Dobermann (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Sugar"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Matoimaru (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Grindstone"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Perfumer (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Oriron"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Leizi (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Alloy"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Pudding (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Device"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Vigna (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "1 Module Blocks"
+task $lastid annotate "4 T3 Manga"
+task $lastid annotate "20,000 LMD"
 
 newtitle=": Module: Bibeak (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Solvent"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Flamebringer (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Polyester"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Swire (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Oririon"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Whislash (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Polyester"
+task $lastid annotate "40,000 LMD"
 
 newtitle=": Module: Breeze (Upgrade)"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
 task $lastid annotate "Priority: Low"
+task $lastid annotate "2 Module Blocks"
+task $lastid annotate "3 T4 Manga"
+task $lastid annotate "40,000 LMD"
 
 #################################################################
 
@@ -996,26 +1056,43 @@ newtitle=": Upgrade: Lee Elite 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
+task $lastid annotate "4 T2.2 Specialist Chips"
+task $lastid annotate "4 T5 Polymerization Prep"
+task $lastid annotate "9 T4 Kohl"
+task $lastid annotate "180,000 LMD"
 
 newtitle=": Upgrade: Kjera Elite 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "3 T2.2 Caster Chips"
+task $lastid annotate "8 T4 Grindstone"
+task $lastid annotate "13 T3 Alloy"
+task $lastid annotate "120,000 LMD"
 
 newtitle=": Upgrade: Blacknight Elite 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "3 T2.2 Vanguard Chips"
+task $lastid annotate "8 T4 Alloy"
+task $lastid annotate "13 T3 Kohl"
+task $lastid annotate "120,000 LMD"
 
 newtitle=": Upgrade: Kroos2 Elite 1"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "4 T1 Sniper Chips"
 
 newtitle=": Upgrade: Kroos2 Elite 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "3 T2.2 Sniper Chips"
+task $lastid annotate "7 T4 Crystal"
+task $lastid annotate "10 T3 Oriron"
+task $lastid annotate "120,000 LMD"
 
 #################################################################
 
@@ -1023,21 +1100,33 @@ newtitle=": Skills: Gladiia Skill 1 Mastery 3"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority
 lastid=$(task +LATEST ids)
+task $lastid annotate "15 T3 Skillbook"
+task $lastid annotate "6 T5 D32"
+task $lastid annotate "6 T4 Gel"
 
 newtitle=": Skills: Zima Skill 1 Mastery 1"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "5 T3 Skillbook"
+task $lastid annotate "3 T4 Kohl"
+task $lastid annotate "5 T3 Keton"
 
 newtitle=": Skills: Zima Skill 1 Mastery 2"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "6 T3 Skillbook"
+task $lastid annotate "6 T4 Kohl"
+task $lastid annotate "3 T4 Grindstone"
 
 newtitle=": Skills: Zima Skill 1 Mastery 3"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+task $lastid annotate "10 T3 Skillbook"
+task $lastid annotate "4 T5 Bipolar Nanoflake"
+task $lastid annotate "4 T4 Rock"
 
 newtitle=": Skills: GoldenGlow Skill 3 Mastery 1"
 newtitle_="\"${basetitle}${newtitle}\"" 
@@ -1593,3 +1682,528 @@ newtitle=": Skills: Blacknight Skill 1 Mastery 3"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
+
+#################################################################
+
+priority=-1
+
+newtitle=": Potentials: Blaze 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Hellagur 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Hellagur 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Hellagur 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Pallas 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Pallas 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Pallas 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Pallas 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Archetto 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Archetto 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Fartooth 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Fartooth 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Fartooth 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Blemishine 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Gnosis 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Gnosis 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Gnosis 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Gnosis 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ling 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+task $lastid annotate "Limited Operator"
+
+newtitle=": Potentials: Carnelian 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Carnelian 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Carnelian 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Carnelian 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ceobe 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Dusk 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+task $lastid annotate "Limited Operator"
+
+newtitle=": Potentials: Dusk 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+task $lastid annotate "Limited Operator"
+
+newtitle=": Potentials: Dusk 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+task $lastid annotate "Limited Operator"
+
+newtitle=": Potentials: GoldenGlow 2/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: GoldenGlow 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: GoldenGlow 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: GoldenGlow 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: GoldenGlow 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Passenger 2/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Passenger 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Passenger 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Passenger 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Passenger 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Aak 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mizuki 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mizuki 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mizuki 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mizuki 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Flametail 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Flametail 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Flametail 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Flametail 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Indra 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Indra 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Indra 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Toddifons 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Toddifons 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Toddifons 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Toddifons 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Asbestos 2/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Asbestos 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Asbestos 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Asbestos 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Asbestos 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ashlock 2/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ashlock 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ashlock 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ashlock 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Ashlock 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Aurora 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Aurora 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Aurora 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Shalem 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Vulcan 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Vulcan 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Vulcan 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Honeyberry 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Honeyberry 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Honeyberry 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Honeyberry 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mulberry 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Mulberry 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Iris 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Iris 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Iris 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Leizi 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Leizi 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Leizi 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Kirara 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Kirara 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Kirara 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Chiave 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Purestream 2/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Purestream 3/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Purestream 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Purestream 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Purestream 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Lee 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Quercus 4/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Quercus 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Quercus 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Justice Knight 5/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority 
+lastid=$(task +LATEST ids)
+
+newtitle=": Potentials: Justice Knight 6/6"
+newtitle_="\"${basetitle}${newtitle}\"" 
+task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
+lastid=$(task +LATEST ids)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
