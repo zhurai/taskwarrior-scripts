@@ -34,7 +34,7 @@ function create_date () {
     lastid=$(task +LATEST ids)
     
     # annotate relationship data
-    $relarray=(${4//,/ })
+    relarray=(${4//,/ })
     for rel in $relarray
     do
         task $lastid annotate "Relationship ${rel}"
