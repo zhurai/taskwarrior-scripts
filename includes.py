@@ -47,6 +47,11 @@ def task_add (rc_dateformat,task_name,projects,tags,priority=0,scheduled=None,un
         for item in depends:
             subprocess.run(['task',task_id,'modify','depends:"'+item+'"'],stdout=subprocess.PIPE)
 
+def task_get(task_search):
+    result=subprocess.run(['task',*task_search,'ids'], stdout=subprocess.PIPE)
+    task_ids=result.stdout.decode('utf-8').rstrip()
+    return task_ids
+
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
    pass
