@@ -12,11 +12,11 @@ base_title="Birthday: "
 priority=3
 
 # Other Variables
-input_file="birthday.csv"
+file_path = os.path.realpath(__file__)
+input_file=file_path+"/birthday.csv"
 seperator='|'
 rc_dateformat="Y-M-DTH:N:S"
 date_format="+%Y-%m-%dT%H:%M:%S"
-file_path = os.path.realpath(__file__)
 
 def create_date (name,birthday,relationship,note):
     new_title="\""+base_title+name+" ("+birthday+")\"" 
