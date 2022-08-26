@@ -20,9 +20,9 @@ def create_date (dateformat,scheduleddate,untildate,thetitle):
     
     # all the other dates should be the source timezone
     result=subprocess.run(['date','-d',scheduleddate, dateformat], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
-    scheduleddate=result.stdout.decode('utf-8')
+    scheduleddate=result.stdout.decode('utf-8').rstrip()
     result=subprocess.run(['date','-d',untildate, dateformat], env={'TZ': 'UTC'+str(offset)}, stdout=subprocess.PIPE)
-    untildate=result.stdout.decode('utf-8')
+    untildate=result.stdout.decode('utf-8').rstrip()
     newtitle="\""+basetitle+thetitle+"\"" 
     
     # execute command
@@ -65,11 +65,11 @@ if stdbannerID:
         theID=bannerArray[0]
         # check id due date
         result=subprocess.run(['task','_get',theID+'.due'], stdout=subprocess.PIPE)
-        thedue=result.stdout.decode('utf-8')
+        thedue=result.stdout.decode('utf-8').rstrip()
         # collect information
         newStart=thedue
         result=subprocess.run(['date','-d',thedue.split("T")[0]+'+ 14 days',dateformat], stdout=subprocess.PIPE)
-        newEnd=result.stdout.decode('utf-8')
+        newEnd=result.stdout.decode('utf-8').rstrip()
         print(newEnd)
         subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+newStart+'"','until:"'+newEnd+'"','rc.dateformat:"'+rcdateformat+'"','priority:"'+str(priority)+'"'])
     else:
@@ -94,11 +94,11 @@ if stdbannerID:
         theID=bannerArray[0]
         # check id due date
         result=subprocess.run(['task','_get',theID+'.due'], stdout=subprocess.PIPE)
-        thedue=result.stdout.decode('utf-8')
+        thedue=result.stdout.decode('utf-8').rstrip()
         # collect information
         newStart=thedue
         result=subprocess.run(['date','-d',thedue.split("T")[0]+'+ 14 days',dateformat], stdout=subprocess.PIPE)
-        newEnd=result.stdout.decode('utf-8')
+        newEnd=result.stdout.decode('utf-8').rstrip()
         print(newEnd)
         subprocess.run(['task','add','project:"'+project+'"',*tags,newtitle,'scheduled:"'+newStart+'"','until:"'+newEnd+'"','rc.dateformat:"'+rcdateformat+'"','priority:"'+str(priority)+'"'])
     else:
