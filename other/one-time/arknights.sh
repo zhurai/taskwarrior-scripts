@@ -2175,35 +2175,3 @@ newtitle=": Potentials: Justice Knight 6/6"
 newtitle_="\"${basetitle}${newtitle}\"" 
 task add project:$project $tags $newtitle_ priority:$priority depends:$lastid
 lastid=$(task +LATEST ids)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
