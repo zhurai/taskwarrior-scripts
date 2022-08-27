@@ -16,7 +16,7 @@ until="next monday 4:00"
 
 # Event information
 project="Games.Arknights"
-tags="+games +arknights +weeklies"
+tags=["+games","+arknights","+weeklies"]
 base_title="Arknights: Weekly Annihilation"
 priority=2
 offset=+7 # +7 = UTC-7
@@ -44,27 +44,25 @@ for interval in range(1,loop+1):
     new_title="\""+base_title+": Run "+str(interval)+"/"+str(loop)+"\""	
     
     # create dependency array
-    depends_array=[]
-    depends="depends:"
+    depends=[]
     for id in id_array:
         if id == "":
             pass
         else:
-            depends_array.append("depends:"+str(id))
-
+            depends.append(str(id))
+    
     # Add the task and get lastid for the array
-    includes.task_add(rc_dateformat,new_title,project,tags,priority,schedule_,until_,due_,None,None,depends_array)
+    includes.task_add(rc_dateformat,new_title,project,tags,priority,schedule_,until_,due_,None,None,depends)
     lastid=includes.task_get_last()	
     id_array.append(lastid)
 
 # create dependency array
-depends_array=[]
-depends="depends:"
+depends=[]
 for id in id_array:
     if id == "":
         pass
 else:
-    depends_array.append("depends:"+str(id))
+    depends.append(str(id))
     
 # After all of the "series" is added, make the "category"
-includes.task_add(rc_dateformat,base_title,project,tags,priority,schedule_,until_,None,None,None,depends_array)
+includes.task_add(rc_dateformat,base_title,project,tags,priority,schedule_,until_,None,None,None,depends)
