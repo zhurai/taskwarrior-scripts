@@ -17,7 +17,7 @@ until="next "+weekly_reset
 
 # Event information
 tags.append('+weeklies')
-base_title="Weekly Shadow Palace"
+base_title=base_title+"Weekly Shadow Palace"
 priority=2
 loop=7
 
