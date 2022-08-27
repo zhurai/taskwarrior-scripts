@@ -3,7 +3,7 @@ import os
 file_path = os.path.dirname(os.path.abspath(__file__))
 import sys
 sys.path.insert(0, file_path+"/..")
-import includes
+from includes import *
 import csv
 
 # Information
@@ -16,16 +16,18 @@ diffperiod=7
 # Other Variables
 input_file=file_path+"/birthday.csv"
 seperator='|'
-rc_dateformat=includes.rc_dateformat
-date_format=includes.date_format
+#rc_dateformat=rc_dateformat
+#date_format=date_format
+
+#################################################################
 
 def create_date (name,birthday,relationship,note):
     new_title="\""+base_title+name+" ("+birthday+")\"" 
 
     # dates should be current timezone
-    birthday_=includes.date_create(date_format,birthday)
-    scheduled_=includes.date_create(date_format,birthday,"-"+diffperiod+" days")
-    until_=includes.date_create(date_format,birthday,"+"+diffperiod+" days")
+    birthday_=date_create(date_format,birthday)
+    scheduled_=date_create(date_format,birthday,"-"+diffperiod+" days")
+    until_=date_create(date_format,birthday,"+"+diffperiod+" days")
     
     # split relationship items   
     relationship_=relationship.split(",")
@@ -35,7 +37,7 @@ def create_date (name,birthday,relationship,note):
     annotation.append("Note: "+note)
         
     # run task command
-    includes.task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,birthday_,None,annotation,None)
+    task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,birthday_,None,annotation,None)
         
 #################################################################
 
