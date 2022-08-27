@@ -45,7 +45,7 @@ for x in range(1,loop+1):
     depends_array=[]
     depends="depends:"
     for id in id_array:
-        if id is "":
+        if id == "":
             pass
         else:
             depends_array.append("depends:"+id)
@@ -59,7 +59,7 @@ for x in range(1,loop+1):
 depends_array=[]
 depends="depends:"
 for id in id_array:
-    if id is "":
+    if id == "":
         pass
 else:
     depends_array.append("depends:"+id)
