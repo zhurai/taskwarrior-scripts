@@ -39,9 +39,9 @@ else:
     due_=includes.date_create(date_format,due)
     until_=includes.date_create(date_format,until)
 
-for x in range(1,loop+1):
+for interval in range(1,loop+1):
     # create title
-    new_title="\""+base_title+": Run "+x+"/"+str(loop)+"\""	
+    new_title="\""+base_title+": Run "+str(interval)+"/"+str(loop)+"\""	
     
     # create dependency array
     depends_array=[]
@@ -50,7 +50,7 @@ for x in range(1,loop+1):
         if id == "":
             pass
         else:
-            depends_array.append("depends:"+id)
+            depends_array.append("depends:"+str(id))
 
     # Add the task and get lastid for the array
     includes.task_add(rc_dateformat,new_title,project,tags,priority,schedule_,until_,due_,None,None,depends_array)
@@ -64,7 +64,7 @@ for id in id_array:
     if id == "":
         pass
 else:
-    depends_array.append("depends:"+id)
+    depends_array.append("depends:"+str(id))
     
 # After all of the "series" is added, make the "category"
 includes.task_add(rc_dateformat,base_title,project,tags,priority,schedule_,until_,None,None,None,depends_array)
