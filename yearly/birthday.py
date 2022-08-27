@@ -26,8 +26,8 @@ def create_date (name,birthday,relationship,note):
 
     # dates should be current timezone
     birthday_=date_create(date_format,birthday)
-    scheduled_=date_create(date_format,birthday,"-"+diffperiod+" days")
-    until_=date_create(date_format,birthday,"+"+diffperiod+" days")
+    scheduled_=date_create(date_format,birthday,"-"+str(diffperiod)+" days")
+    until_=date_create(date_format,birthday,"+"+str(diffperiod)+" days")
     
     # split relationship items   
     relationship_=relationship.split(",")
