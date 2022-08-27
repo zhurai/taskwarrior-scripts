@@ -46,6 +46,9 @@ def task_add (rc_dateformat,task_name,projects,tags,priority=0,scheduled=None,un
     if depends:
         for item in depends:
             subprocess.run(['task',task_id,'modify','depends:"'+item+'"'],stdout=subprocess.PIPE)
+    
+    # return the task created
+    return task_id
 
 def task_get_last():
     result=subprocess.run(['task',"+LATEST",'ids'], stdout=subprocess.PIPE)
