@@ -17,7 +17,7 @@ until="next "+arknights_en.weekly_reset
 
 # Event information
 project=arknights_en.project
-tags=arknights_en.tags+['weeklies']
+tags=arknights_en.tags+['+weeklies']
 base_title=arknights_en.base_title+"Weekly Annihilation"
 offset=arknights_en.offset
 priority=2
