@@ -22,7 +22,7 @@ priority=2
 loop=7
 
 # Other Variables
-id_array=()
+id_array=[]
 
 if sys.argv == 1:
     # no command line arguments, then assume we are building for an upcoming week
