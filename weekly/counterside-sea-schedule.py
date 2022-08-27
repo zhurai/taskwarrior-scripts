@@ -10,7 +10,7 @@ from counterside_sea import *
 tags.append('+schedule')
 priority=-1
 
-def create_date (title,scheduled,until,annotations):
+def create_date (title,scheduled,until,annotations=None):
     # the dates should be the source timezone
     scheduled_=date_create(date_format,scheduled,None,offset)
     until_=date_create(date_format,until,None,offset)
