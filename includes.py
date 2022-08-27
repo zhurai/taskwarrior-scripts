@@ -51,6 +51,7 @@ def task_get_last():
     result=subprocess.run(['task',"+LATEST",'ids'], stdout=subprocess.PIPE)
     task_id=result.stdout.decode('utf-8').rstrip()
     return task_id
+
 def task_get(task_search):
     result=subprocess.run(['task',*task_search,'ids'], stdout=subprocess.PIPE)
     task_ids=result.stdout.decode('utf-8').rstrip()
