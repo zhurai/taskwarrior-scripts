@@ -20,11 +20,11 @@ tags="+games +arknights +weeklies"
 base_title="Arknights: Weekly Annihilation"
 priority=2
 offset=+7 # +7 = UTC-7
-loop=5
+loop=5 
 
 # Other Variables
 rc_dateformat="Y-M-DTH:N:S"
-id_array=()
+id_array=[]
 date_format="+%Y-%m-%dT%H:%M:%S"
 
 if sys.argv == 1:
