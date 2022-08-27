@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+import os
+file_path = os.path.dirname(os.path.abspath(__file__))
 import sys
-sys.path.insert(0, '..')
+sys.path.insert(0, file_path+"/..")
 import includes
 import csv
-import os
 
 # Information
 project="Personal.Birthdays"
@@ -12,7 +13,6 @@ base_title="Birthday: "
 priority=3
 
 # Other Variables
-file_path = os.path.realpath(__file__)
 input_file=file_path+"/birthday.csv"
 seperator='|'
 rc_dateformat="Y-M-DTH:N:S"

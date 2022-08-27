@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import os
+file_path = os.path.dirname(os.path.abspath(__file__))
 import sys
-sys.path.insert(0, '..')
+sys.path.insert(0, file_path+"/..")
 import includes
 
 # Date generation
@@ -39,7 +41,7 @@ else:
 
 for x in range(1,loop+1):
     # create title
-    new_title="\""+base_title+": Run " + x + "/" + loop+"\""	
+    new_title="\""+base_title+": Run "+x+"/"+str(loop)+"\""	
     
     # create dependency array
     depends_array=[]

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import os
+file_path = os.path.dirname(os.path.abspath(__file__))
 import sys
-sys.path.insert(0, '..')
+sys.path.insert(0, file_path+"/..")
 import includes
 
 # Event information
