@@ -46,7 +46,7 @@ def create_date(title,start,due,until,scheduled):
 #  scheduled:  	friday 0:00
 #  due: 	   *sunday 23:59
 #  until:		next monday 0:00
-thetitle=": Claim Weekly Rewards"
+thetitle="Claim Weekly Rewards"
 start=""
 scheduled=weekly_reset
 due="sunday 23:59"
@@ -58,7 +58,7 @@ create_date(thetitle,start,scheduled,due,until)
 #  scheduled:  	monday 0:00
 #  due: 	   *sunday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop: YellowCert: Check Royal Tokens"
+thetitle="Shop: YellowCert: Check Royal Tokens"
 start=""
 scheduled=weekly_reset
 due="sunday 23:59"
