@@ -11,6 +11,7 @@ project="Personal.Birthdays"
 tags=["+personal","+birthdays"]
 base_title="Birthday: "
 priority=3
+diffperiod=7
 
 # Other Variables
 input_file=file_path+"/birthday.csv"
@@ -23,8 +24,8 @@ def create_date (name,birthday,relationship,note):
 
     # dates should be current timezone
     birthday_=includes.date_create(date_format,birthday)
-    scheduled_=includes.date_create(date_format,birthday,"-7 days")
-    until_=includes.date_create(date_format,birthday,"+7 days")
+    scheduled_=includes.date_create(date_format,birthday,"-"+diffperiod+" days")
+    until_=includes.date_create(date_format,birthday,"+"+diffperiod+" days")
     
     # split relationship items   
     relationship_=relationship.split(",")
