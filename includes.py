@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 import subprocess
 
+rc_dateformat="Y-M-DTH:N:S"
+date_format="+%Y-%m-%dT%H:%M:%S"
+
 def date_create (date_format,day,adjustments=None,offset=None):
     if adjustments and offset:
         result=subprocess.run(['date','-d',day+adjustments,date_format],env={'TZ': 'UTC'+str(offset)},stdout=subprocess.PIPE)

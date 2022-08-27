@@ -16,8 +16,8 @@ diffperiod=7
 # Other Variables
 input_file=file_path+"/birthday.csv"
 seperator='|'
-rc_dateformat="Y-M-DTH:N:S"
-date_format="+%Y-%m-%dT%H:%M:%S"
+rc_dateformat=includes.rc_dateformat
+date_format=includes.date_format
 
 def create_date (name,birthday,relationship,note):
     new_title="\""+base_title+name+" ("+birthday+")\"" 

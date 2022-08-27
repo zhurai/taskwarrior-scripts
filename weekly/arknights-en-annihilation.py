@@ -24,9 +24,9 @@ priority=2
 loop=5 
 
 # Other Variables
-rc_dateformat="Y-M-DTH:N:S"
+rc_dateformat=includes.rc_dateformat
+date_format=includes.date_format
 id_array=[]
-date_format="+%Y-%m-%dT%H:%M:%S"
 
 if sys.argv == 1:
     # no command line arguments, then assume we are building for an upcoming week
