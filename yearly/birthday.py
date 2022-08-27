@@ -16,8 +16,6 @@ diffperiod=7
 # Other Variables
 input_file=file_path+"/birthday.csv"
 seperator='|'
-#rc_dateformat=rc_dateformat
-#date_format=date_format
 
 #################################################################
 
