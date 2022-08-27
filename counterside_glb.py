@@ -6,6 +6,8 @@ base_title="CounterSide.GLB: "
 
 offset=+5 # +5 = UTC-5
 daily_reset="4:00"
+daily_shop_reset="0:00"
 weekly_reset="monday 4:00"
+weekly_shop_reset="monday 0:00"
 evening_login_start="16:00"
 evening_login_end="tomorrow at 0:00"
