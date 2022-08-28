@@ -13,17 +13,6 @@ priority=0
 rcdateformat="Y-M-DTH:N:S"
 dateformat="+%Y-%m-%dT%H:%M:%S"
 
-function create_date () {
-    # $1 = $thetitle
-    # $2 = $previousid
-    
-    # all the other dates should be the source timezone
-    newtitle_="\"${basetitle}${1}\"" 
-    
-    # execute command
-    task add project:$project $tags $newtitle_ priority:$priority depends:$previousid
-}
-
 #################################################################
 
 newtitle=": Stages: Main Story 2-3 CM"
