@@ -1,0 +1,27 @@
+Stages: Main Story 9-17 CM,None
+Stages: Main Story 9-18 CM,None
+Stages: Main Story 9-19 CM,None
+Stages: Main Story H9-1,None
+Stages: Main Story H9-2,dependslast
+Stages: Main Story H9-3,dependslast
+Stages: Main Story H9-4,dependslast
+Stages: Main Story H9-5,dependslast
+Stages: Main Story H9-6,dependslast
+RedCert Shop: Honey Berry (3/6) (600 certs),None
+RedCert Shop: Honey Berry (4/6) (600 certs),dependslast
+RedCert Shop: Honey Berry (5/6) (600 certs),dependslast
+RedCert Shop: Honey Berry (6/6) (600 certs),dependslast
+RedCert Shop: Honey Berry (6/6) (600 certs),dependslast
+Module: Lee (Mission 1),None,Kill 80 enemies with Lee
+Module: Lee (Mission 2),dependslast,Main Story 3-1 using Lee and Sniper/Vanguard/Medics only in party
+Module: Lee (Upgrade),dependslast,Priority: High,4 Module Blocks,2 T5 D32,80,000 LMD
+Module: Wild Mane (Upgrade),None,Priority: Medium,2 Module Blocks,3 T4 Rock,40,000 LMD
+Upgrade: Lee Elite 2 Level 90,None
+Upgrade: Blacknight Elite 2,dependslast,3 T2.2 Vanguard Chips,8 T4 Alloy,15 T3 Kohl,120,000 LMD
+Upgrade: Blacknight Elite 2 Level 80,dependslast
+Skills: Gladiia Skill 1 Mastery 3,None,15 T3 Skillbook,6 T5 D32,6 T4 Gel
+Skills: Zima Skill 1 Mastery 1,dependslast,5 T3 Skillbook,3 T4 Kohl,5 T3 Keton
+Skills: Zima Skill 1 Mastery 2,dependslast,6 T3 Skillbook,6 T4 Kohl,3 T4 Grindstone
+Skills: Zima Skill 1 Mastery 3,dependslast,10 T3 Skillbook,4 T5 Bipolar Nanoflake,4 T4 Rock
+Potentials: Justice Knight 5/6,None
+Potentials: Justice Knight 6/6,dependslast
