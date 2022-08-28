@@ -23,7 +23,7 @@ priority=2
 # Other Variables
 idarray=[]
 
-def create_date(title,start,due,until,scheduled):
+def create_task(title,start,due,until,scheduled):
     
     # date should be current timezone
     start_=date_create(date_format,start)
@@ -51,7 +51,7 @@ start=""
 scheduled=weekly_reset
 due="sunday 23:59"
 until="next "+weekly_reset
-create_date(thetitle,start,scheduled,due,until)
+create_task(thetitle,start,scheduled,due,until)
 
 # Shop: Yellow Cert: 6star (Royal) Tokens
 #  start:      *
@@ -63,4 +63,4 @@ start=""
 scheduled=weekly_reset
 due="sunday 23:59"
 until="next "+weekly_reset
-create_date(thetitle,start,scheduled,due,until)
+create_task(thetitle,start,scheduled,due,until)

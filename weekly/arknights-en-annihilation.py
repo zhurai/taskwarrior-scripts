@@ -7,9 +7,9 @@ from includes import *
 from arknights_en import *
 
 # Date generation
-#  start:	    N/A
+#  start:	   *N/A
 #  scheduled:  	monday 4:00
-#  due: 	    sunday 23:59
+#  due: 	   *sunday 23:59
 #  until:		next monday 4:00
 scheduled=weekly_reset
 due="sunday 23:59"
@@ -26,15 +26,15 @@ id_array=[]
 
 if sys.argv == 1:
     # no command line arguments, then assume we are building for an upcoming week
-    scheduled_=date_create(date_format,scheduled)
+    scheduled_=date_create(date_format,scheduled,None,offset)
     due_temp=date_create("+%Y-%m-%d",due)
     due_=date_create(date_format,due_temp,"+7 days")
-    until_=date_create(date_format,until)
+    until_=date_create(date_format,until,None,offset)
 else:
     # if any commandline arguments, then assume we are building for this week
-    scheduled_=date_create(date_format,scheduled)
+    scheduled_=date_create(date_format,scheduled,None,offset)
     due_=date_create(date_format,due)
-    until_=date_create(date_format,until)
+    until_=date_create(date_format,until,None,offset)
 
 for interval in range(1,loop+1):
     # create title

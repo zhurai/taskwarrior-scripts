@@ -10,7 +10,7 @@ from counterside_sea import *
 tags.append('+schedule')
 priority=-1
 
-def create_date (title,scheduled,until,annotations=None):
+def create_task (title,scheduled,until,annotations=None):
     # the dates should be the source timezone
     scheduled_=date_create(date_format,scheduled,None,offset)
     until_=date_create(date_format,until,None,offset)
@@ -32,7 +32,7 @@ def create_date (title,scheduled,until,annotations=None):
 thetitle="Reset: Weekly"
 scheduled=weekly_reset
 until="next "+weekly_reset
-create_date(thetitle,scheduled,until) 
+create_task(thetitle,scheduled,until) 
 
 # Weekly Shop Reset
 #  scheduled:  	monday 0:00
@@ -53,4 +53,4 @@ annotations=["Reset: Store: Exchange: Convenience: Gear Precision Package (3qty,
     "Reset: Store: Exchange: BusinessCard: 10 APT Cores Coupon (3qty,10cards) [High Priority]",
     "Reset: Store: Exchange: BusinessCard: S-APT Cores Coupon (10qty,10cards) [High Priority]",
     "Reset: Store: Exchange: BusinessCard: Fusion Core (5qty,30cards) [High Priority]"]
-create_date(thetitle,scheduled,until,annotations) 
+create_task(thetitle,scheduled,until,annotations) 

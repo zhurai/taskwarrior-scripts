@@ -11,7 +11,7 @@ import re
 tags.append('+schedule')
 priority=-1
 
-def create_date (title,scheduled,until):
+def create_task (title,scheduled,until):
     # all the dates should be the source timezone
     scheduled_=date_create(date_format,scheduled,None,offset)
     until_=date_create(date_format,until,None,offset)
@@ -26,7 +26,7 @@ def create_date (title,scheduled,until):
 the_title="Reset: Weekly"
 schedule=weekly_reset
 until="next "+weekly_reset
-create_date(the_title,schedule,until)
+create_task(the_title,schedule,until,offset)
 
 # Annihilation Reset
 #  scheduled:  	monday 4:00
@@ -34,7 +34,7 @@ create_date(the_title,schedule,until)
 the_title="Reset: Weekly Annihilation"
 schedule=weekly_reset
 until="next "+weekly_reset
-create_date(the_title,schedule,until)
+create_task(the_title,schedule,until,offset)
 
 #################################################################
 
@@ -57,7 +57,7 @@ if banner_ids:
         thedue=task_getDOM("due")
         # collect information
         new_start=thedue
-        new_end=date_create(date_format,thedue.split("T")[0],"+14 days")
+        new_end=date_create(date_format,thedue.split("T")[0],"+14 days",offset)
         # run task command
         task_add(rc_dateformat,new_title,project,tags,priority,new_start,new_end)
     else:
@@ -84,7 +84,7 @@ if banner_ids:
         thedue=task_getDOM("due")
         # collect information
         new_start=thedue
-        new_end=date_create(date_format,thedue.split("T")[0],"+14 days")
+        new_end=date_create(date_format,thedue.split("T")[0],"+14 days",offset)
         # run task command
         task_add(rc_dateformat,new_title,project,tags,priority,new_start,new_end)
     else:
