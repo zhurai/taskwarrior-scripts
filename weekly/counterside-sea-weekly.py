@@ -58,160 +58,150 @@ create_task(thetitle,start,due,scheduled,until,annotations)
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.BusinessCard: 10 APT Core Coupon (30 cards)"
+thetitle="Shop.Exchange.BusinessCard: 10 APT Core Coupon (30 cards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 3"
-task $lastid annotate "Cost: 10"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 3",
+    "Cost: 10",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Business Card: S-APT Core Coupon
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.BusinessCard: S-APT Core Coupon (100 cards)"
+thetitle="Shop.Exchange.BusinessCard: S-APT Core Coupon (100 cards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 10"
-task $lastid annotate "Cost: 10"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 10",
+    "Cost: 10",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Consortium: Set Binary
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.Consortium: Set Binary (4000 Tokens)"
+thetitle="Shop.Exchange.Consortium: Set Binary (4000 Tokens)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 5"
-task $lastid annotate "Cost: 800"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 5",
+    "Cost: 800",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Consortium: Fusion Core
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.Consortium: Fusion Core (2000 Tokens)"
+thetitle="Shop.Exchange.Consortium: Fusion Core (2000 Tokens)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 1"
-task $lastid annotate "Cost: 2000"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 1",
+    "Cost: 2000",
+    "Priority: Medium"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Consortium: S-APT Core Coupon
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.Consortium: S-APT Core Coupon (3000 Tokens)"
+thetitle="Shop.Exchange.Consortium: S-APT Core Coupon (3000 Tokens)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 3"
-task $lastid annotate "Cost: 1000"
-task $lastid annotate "Priority: Low"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 3",
+    "Cost: 1000",
+    "Priority: Low"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: ShadowPalace: Tuning Binary
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.ShadowPalace: Tuning Binary (150 shards)"
+thetitle="Shop.Exchange.ShadowPalace: Tuning Binary (150 shards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 5"
-task $lastid annotate "Cost: 30"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 5",
+    "Cost: 30",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: ShadowPalace: 50% Off T6 Spectral Universal Mold
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.ShadowPalace: 50% Off T6 Spectral Universal Mold (450 shards)"
+thetitle="Shop.Exchange.ShadowPalace: 50% Off T6 Spectral Universal Mold (450 shards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 15"
-task $lastid annotate "Cost: 30"
-task $lastid annotate "Priority: Medium"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 15",
+    "Cost: 30",
+    "Priority: Medium"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: ShadowPalace: 75% Off T6 Spectral Universal Mold
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.ShadowPalace: 75% Off T6 Spectral Universal Mold (225 shards)"
+thetitle="Shop.Exchange.ShadowPalace: 75% Off T6 Spectral Universal Mold (225 shards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 15"
-task $lastid annotate "Cost: 15"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 15",
+    "Cost: 15",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: ShadowPalace: Ultraprecise T6 Spectral Universal Mold
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.ShadowPalace: Ultraprecise T6 Spectral Universal Mold (120 shards)"
+thetitle="Shop.Exchange.ShadowPalace: Ultraprecise T6 Spectral Universal Mold (120 shards)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 1"
-task $lastid annotate "Cost: 120"
-task $lastid annotate "Priority: High"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 1",
+    "Cost: 120",
+    "Priority: High"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Convenience: Discounted Fusion Core 
 #  start:      *
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.Convenience: Fusion Core (520 quartz)"
+thetitle="Shop.Exchange.Convenience: Fusion Core (520 quartz)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 2"
-task $lastid annotate "Cost: 260 Quartz"
-task $lastid annotate "Priority: Medium"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 2",
+    "Cost: 260",
+    "Priority: Medium"]
+create_task(thetitle,start,due,scheduled,until,annotations)
 
 # Shop: Exchange: Convenience: Gear Precision Package
 #  start:      *
@@ -220,11 +210,10 @@ task $lastid annotate "Priority: Medium"
 #  until:		next monday 0:00
 thetitle=": Shop.Exchange.Convenience: Gear Precision Package (2370 quartz)"
 startdate=""
-scheduleddate="monday 0:00"
+scheduled=weekly_shop_reset
 duedate="saturday 23:59"
-untildate="next monday 0:00"
-create_date "$dateformat" "$startdate" "$scheduleddate" "$duedate" "$untildate" "$thetitle"
-lastid=$(task +LATEST ids)
-task $lastid annotate "Quantity: 3"
-task $lastid annotate "Cost: 790 Quartz"
-task $lastid annotate "Priority: Low"
+until="next "+weekly_shop_reset
+annotations=["Quantity: 3",
+    "Cost: 790",
+    "Priority: Low"]
+create_task(thetitle,start,due,scheduled,until,annotations)
