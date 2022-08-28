@@ -36,8 +36,6 @@ schedule=weekly_reset
 until="next "+weekly_reset
 create_task(the_title,schedule,until,offset)
 
-#################################################################
-
 # Arknights Standard Banner
 #  Every 2 weeks
 #  scheduled:   friday 4:00
@@ -69,7 +67,7 @@ if banner_ids:
 #  Every 2 weeks
 #  scheduled:   friday 4:00
 #  until:       friday 4:00 (2 weeks from now)
-the_title=": YellowCert Rotation (Tokens)"
+the_title="YellowCert Rotation (Tokens)"
 new_title="\""+base_title+the_title+"\"" 
 # get id of previous Banner
 banner_ids=task_get(['/Arknights/','/YellowCert Rotation/'])

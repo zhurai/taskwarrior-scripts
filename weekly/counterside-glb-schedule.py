@@ -24,8 +24,6 @@ def create_task (title,scheduled,until,annotations=None):
     else:
         task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,None,None,None,None)
 
-#################################################################
-
 # Weekly Reset
 #  scheduled:  	monday 4:00
 #  until:		next monday 4:00

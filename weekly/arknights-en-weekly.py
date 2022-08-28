@@ -39,8 +39,6 @@ def create_task(title,start,due,until,scheduled):
     # execute command
     task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,due_,start_,None,None)
 
-#################################################################
-
 # Weekly Claim Rewards
 #  start:      *
 #  scheduled:  	friday 0:00
