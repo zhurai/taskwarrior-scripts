@@ -217,3 +217,15 @@ annotations=["Quantity: 3",
     "Cost: 790",
     "Priority: Low"]
 create_task(thetitle,start,due,scheduled,until,annotations)
+
+# Shop: Exchange: PlanetMall: Operators
+#  start:      *
+#  scheduled:  	monday 0:00
+#  due: 	   *saturday 23:59
+#  until:		next monday 0:00
+thetitle="Shop.Exchange.PlanetMall: Check Operators"
+startdate=""
+scheduled=weekly_shop_reset
+duedate="saturday 23:59"
+until="next "+weekly_shop_reset
+create_task(thetitle,start,due,scheduled,until)
