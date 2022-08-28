@@ -208,7 +208,7 @@ create_task(thetitle,start,due,scheduled,until,annotations)
 #  scheduled:  	monday 0:00
 #  due: 	   *saturday 23:59
 #  until:		next monday 0:00
-thetitle=": Shop.Exchange.Convenience: Gear Precision Package (2370 quartz)"
+thetitle="Shop.Exchange.Convenience: Gear Precision Package (2370 quartz)"
 startdate=""
 scheduled=weekly_shop_reset
 duedate="saturday 23:59"
