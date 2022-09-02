@@ -26,19 +26,19 @@ def task_add (rc_dateformat,task_name,projects,tags,priority=0,scheduled=None,un
     
     # add start
     if start:
-        subprocess.run(['task',task_id,'modify','start:"'+start+'"'],stdout=subprocess.PIPE)
+        subprocess.run(['task',task_id,'modify','start:"'+start+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
     
     # add scheduled
     if scheduled:
-        subprocess.run(['task',task_id,'modify','scheduled:"'+scheduled+'"'],stdout=subprocess.PIPE)
+        subprocess.run(['task',task_id,'modify','scheduled:"'+scheduled+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
     
     # add due
     if due:
-        subprocess.run(['task',task_id,'modify','due:"'+due+'"'],stdout=subprocess.PIPE)
+        subprocess.run(['task',task_id,'modify','due:"'+due+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
 
     # add until
     if until:
-        subprocess.run(['task',task_id,'modify','until:"'+until+'"'],stdout=subprocess.PIPE)
+        subprocess.run(['task',task_id,'modify','until:"'+until+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
 
     # add annotations (Array)
     if annotations:
