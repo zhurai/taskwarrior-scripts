@@ -68,6 +68,56 @@ def task_getDOM(task_id,infotoget):
     response=result.stdout.decode('utf-8').rstrip()
     return response
 
+def task_denotate(task_id,count):
+    for x in range(0,count):
+        subprocess.run(['task',task_id,"denotate"], stdout=subprocess.PIPE)
+
+def task_modify (rc_dateformat,task_id,task_name=None,projects=None,tags=None,priority=None,scheduled=None,until=None,due=None,start=None,annotations=None,depends=None):
+    # modify task_name
+    if task_name:
+        subprocess.run(['task',task_id,'modify','"'+task_name+'"'],stdout=subprocess.PIPE)
+        
+    # modify project
+    if projects:
+        subprocess.run(['task',task_id,'modify','project:"'+projects+'"'],stdout=subprocess.PIPE)
+    
+    # modify tags
+    if tags:
+        subprocess.run(['task',task_id,*tags],stdout=subprocess.PIPE)
+    
+    # modify priority
+    if priority:
+        subprocess.run(['task',task_id,'priority:"'+str(priority)+'"'],stdout=subprocess.PIPE)
+    
+    # modify start
+    if start:
+        subprocess.run(['task',task_id,'modify','start:"'+start+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
+    
+    # modify scheduled
+    if scheduled:
+        subprocess.run(['task',task_id,'modify','scheduled:"'+scheduled+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
+    
+    # modify due
+    if due:
+        subprocess.run(['task',task_id,'modify','due:"'+due+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
+
+    # modify until
+    if until:
+        subprocess.run(['task',task_id,'modify','until:"'+until+'"','rc.dateformat:"'+rc_dateformat+'"'],stdout=subprocess.PIPE)
+
+    # modify/readd annotations (Array)
+    if annotations:
+        for item in annotations:
+            subprocess.run(['task',task_id,'annotate',item],stdout=subprocess.PIPE)
+    
+    # modify/readd dependencies (Array)
+    if depends:
+        for item in depends:
+            subprocess.run(['task',task_id,'modify','depends:"'+item+'"'],stdout=subprocess.PIPE)
+    
+    # return the task created
+    return task_id
+
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
    pass
