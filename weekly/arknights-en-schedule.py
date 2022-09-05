@@ -89,3 +89,30 @@ if banner_ids:
         # more than one
         # do not do anything
         pass
+
+# Arknights Subscription Tracking
+#  Every 30 days
+the_title="Monthly Subscription Due"
+new_title="\""+base_title+the_title+"\"" 
+# get id of previous Banner
+banner_ids=task_get(['/Arknights/','/Monthly Subscription Due/'])
+if banner_ids:
+    # split into multiple
+    banner_array=re.split(r'(?:,| |-)',banner_ids)
+    
+    if len(banner_array) == 1:
+        # only 1 exists
+        theID=banner_array[0]
+        # check id due date
+        thedue=task_getDOM("due")
+        # collect information
+        new_start=thedue
+        new_end=date_create(date_format,thedue.split("T")[0],"+30 days",offset)
+        # run task command
+        task_add(rc_dateformat,new_title,project,tags,priority,new_start,new_end)
+    else:
+        # more than one
+        # do not do anything
+        pass
+
+
