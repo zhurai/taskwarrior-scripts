@@ -90,7 +90,7 @@ if banner_ids:
         # do not do anything
         pass
 
-# Arknights Subscription Tracking
+# Subscription Tracking
 #  Every 30 days
 the_title="Monthly Subscription Due"
 new_title="\""+base_title+the_title+"\"" 

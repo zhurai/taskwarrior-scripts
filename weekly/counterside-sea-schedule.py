@@ -5,6 +5,7 @@ import sys
 sys.path.insert(0, file_path+"/..")
 from includes import *
 from counterside_sea import *
+import re
 
 # Event information
 tags.append('+schedule')
@@ -52,3 +53,53 @@ annotations=["Reset: Store: Exchange: Convenience: Gear Precision Package (3qty,
     "Reset: Store: Exchange: BusinessCard: S-APT Cores Coupon (10qty,10cards) [High Priority]",
     "Reset: Store: Exchange: BusinessCard: Fusion Core (5qty,30cards) [High Priority]"]
 create_task(thetitle,scheduled,until,annotations) 
+
+# Subscription Tracking 1
+#  Every 18 days
+the_title="Monthly Subscription 1 Due"
+new_title="\""+base_title+the_title+"\"" 
+# get id of previous Banner
+banner_ids=task_get(['/CounterSide/','/SEA/','/Monthly Subscription 1 Due/'])
+if banner_ids:
+    # split into multiple
+    banner_array=re.split(r'(?:,| |-)',banner_ids)
+    
+    if len(banner_array) == 1:
+        # only 1 exists
+        theID=banner_array[0]
+        # check id due date
+        thedue=task_getDOM("due")
+        # collect information
+        new_start=thedue
+        new_end=date_create(date_format,thedue.split("T")[0],"+18 days",offset)
+        # run task command
+        task_add(rc_dateformat,new_title,project,tags,priority,new_start,new_end)
+    else:
+        # more than one
+        # do not do anything
+        pass
+
+# Subscription Tracking 2
+#  Every 30 days
+the_title="Monthly Subscription 2 Due"
+new_title="\""+base_title+the_title+"\"" 
+# get id of previous Banner
+banner_ids=task_get(['/CounterSide/','/SEA/','/Monthly Subscription 2 Due/'])
+if banner_ids:
+    # split into multiple
+    banner_array=re.split(r'(?:,| |-)',banner_ids)
+    
+    if len(banner_array) == 1:
+        # only 1 exists
+        theID=banner_array[0]
+        # check id due date
+        thedue=task_getDOM("due")
+        # collect information
+        new_start=thedue
+        new_end=date_create(date_format,thedue.split("T")[0],"+30 days",offset)
+        # run task command
+        task_add(rc_dateformat,new_title,project,tags,priority,new_start,new_end)
+    else:
+        # more than one
+        # do not do anything
+        pass
