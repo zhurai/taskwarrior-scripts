@@ -114,5 +114,3 @@ if banner_ids:
         # more than one
         # do not do anything
         pass
-
-
