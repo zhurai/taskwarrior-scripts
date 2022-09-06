@@ -11,13 +11,11 @@ project="Personal.Birthdays"
 tags=["+personal","+birthdays"]
 base_title="Birthday: "
 priority=3
-diffperiod=7
+diffperiod=7 # in days
 
 # Other Variables
 input_file=file_path+"/birthday.csv"
 seperator='|'
-
-#################################################################
 
 def create_date (name,birthday,relationship,note):
     new_title="\""+base_title+name+" ("+birthday+")\"" 
@@ -36,8 +34,6 @@ def create_date (name,birthday,relationship,note):
         
     # run task command
     task_add(rc_dateformat,new_title,project,tags,priority,scheduled_,until_,birthday_,None,annotation,None)
-        
-#################################################################
 
 with open(input_file) as thecsv:
     thereader=csv.reader(thecsv,delimiter=seperator)
