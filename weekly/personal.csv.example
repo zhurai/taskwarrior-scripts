@@ -1,0 +1,32 @@
+Make one of these for every day
+
+Info: BlueLight Filter: End,None,6:00AM
+Wake Up,None,6:50AM
+Change Clothes,dependslast,6:50AM
+CounterSide SEA: Claim Rewards,dependslast,6:51AM
+CounterSide SEA: SweePM,dependslast,6:52AM
+Arknights: Start Macro Auto,dependslast,6:53AM
+Wake Up Block,dependslast,6:53AM
+Work: Travel 1: Leave,None,7:20AM
+Work: Travel 1: Arrive,dependslast,8:00AM
+Work Travel 1 Block,dependslast,8:00AM
+Info: PC2 Auto Restart,None,5:00PM
+Work: Travel 2: Leave,None,5:00PM
+Work: Travel 2: Arrive,dependslast,5:40PM
+Work: Travel 2 Block,dependslast,5:40PM
+Info: PC1 Auto Restart,None,6:00PM
+Dinner: Make,None,6:00PM
+Dinner: Eat,None,6:15PM
+Dinner: Clean UPM,None,6:30PM
+Dinner Block,None,6:45PM
+Post-Dinner: PC1 Login,None,6:45PM
+Post-Dinner: Turn Off LaptoPM,dependslast,6:46PM
+Post-Dinner: Brush Teeth,dependslast,6:47PM
+Post-Dinner: Livestream PrePM,dependslast,6:48PM
+Post-Dinner Block,dependslast,7:00PM
+Streaming: Start,None,7:00PM
+Streaming: End,dependlast,10:00PM
+Streaming Block,dependlast,10:00PM
+Info: BlueLight Filter: Start,None,10:00PM
+Go Sleep,None,10:50PM
+Sleep Block,None,10:50P-6:50AM
